@@ -135,7 +135,7 @@ class SendSms():
             headers = {"Accept": "application/json, text/plain, */*", "Content-Type": "application/json", "Accept-Encoding": "gzip, deflate", "User-Agent": "AriPlusMobile/21 CFNetwork/1335.0.3.2 Darwin/21.6.0", "Accept-Language": "en-US,en;q=0.9", "Authorization": "null", "Connection": "close"}
             json={"email": "", "name": "Memati", "phoneNumber": f"+90{self.phone}", "surname": "Bas"}
             r = requests.post(url, headers=headers, json=json, timeout=6)
-            if r.json()["error"] == "E-Posta veya telefon zaten kayıtlı!":
+            if r.json()["error"] == "E-Posta veya telephone zaten kayıtlı!":
                 print(f"{Fore.LIGHTRED_EX}[-] {Style.RESET_ALL}Başarısız! {self.phone} --> api.345dijital.com")
             else:
                 raise
@@ -264,4 +264,3 @@ class SendSms():
             json={"phone": self.phone}
             r = requests.post(url=url, headers=headers, json=json, timeout=6)
             if r.json()["result"] == "SMS sended succesfully!":
- 
