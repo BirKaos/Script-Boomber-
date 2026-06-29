@@ -2,8 +2,8 @@ import requests
 from time import sleep
 from sms import SendSms
 
-token = "" #bot olarak kullanmak istediğiniz hesabın Discord token'i.
-chat_id =   #sohbet id'si (int)
+token = "1209910370341224450" #bot olarak kullanmak istediğiniz hesabın Discord token'i.
+chat_id =1521119281268523112   #sohbet id'si (int)
 
 def getHeaders(token=None, content_type="application/json"):
     header = {
