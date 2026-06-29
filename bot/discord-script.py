@@ -2,7 +2,7 @@ import discord
 from time import sleep
 from sms import SendSms
 
-TOKEN = ""
+TOKEN = "MTUyMTExODE0NTU4OTI4MDg1MA.GNtsvD.0SKKrm30zwLiSfUl1qI54Xns45-hjiqiAqFBjE"
 
 gif = "https://media.tenor.com/SWiGXYOM8eMAAAAC/russia-soviet.gif"
 adet = 52
@@ -46,4 +46,4 @@ async def on_message(message):
     else:
         pass
   
-client.run(TOKEN)
+client.run(MTUyMTExODE0NTU4OTI4MDg1MA.GNtsvD.0SKKrm30zwLiSfUl1qI54Xns45-hjiqiAqFBjE)
